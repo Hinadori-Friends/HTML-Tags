@@ -13,6 +13,7 @@
  - タグ一覧の基準はWHATWG HTML Living StandardのIndices（Elements）
  - Obsolete features に掲載される廃止・非推奨要素は対象外
  - ここでのチャット内容は `spec/chat.md` に記録し、以後の会話も追記する
+ - 各タグページに属性一覧（意味・指定方法・選択肢）をコード例の前に記載する
 
 ## ディレクトリ構成（予定）
 - `index.html`

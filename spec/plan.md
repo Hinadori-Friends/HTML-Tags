@@ -9,6 +9,7 @@ HTMLタグの解説サイトを作成する。
 - 対象タグはHTMLの全タグとする
 - タグ一覧の基準はWHATWG HTML Living StandardのIndices（Elements）とする
 - 廃止・非推奨（Obsolete features）の要素は対象外とする
+- 各タグページに属性一覧（意味・指定方法・選択肢）を追加する
 
 ## 進め方
 1. 対象タグ（全タグ）の抽出とページ構成の決定
