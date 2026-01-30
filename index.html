@@ -5,23 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTMLタグ一覧</title>
   <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.6; margin: 24px; color: #0f172a; }
-    header { margin-bottom: 16px; }
-    h1 { margin: 0 0 8px; }
-    .count { color: #475569; margin-bottom: 16px; }
-    .tag-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; list-style: none; padding: 0; }
-    .tag-list li { background: #f1f5f9; padding: 8px 10px; border-radius: 8px; }
-    a { text-decoration: none; color: #0f172a; }
-    a:hover { text-decoration: underline; }
+    @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;600;700&display=swap");
+    :root {
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --accent: #f59e0b;
+      --accent-soft: #fde68a;
+      --shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "M PLUS Rounded 1c", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% 0%, #fff7ed 0%, rgba(255,247,237,0) 60%),
+        radial-gradient(900px 500px at 90% 10%, #ecfeff 0%, rgba(236,254,255,0) 60%),
+        #f8fafc;
+      padding: 32px 20px 64px;
+    }
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      background: var(--card);
+      border-radius: 24px;
+      padding: 28px 28px 36px;
+      box-shadow: var(--shadow);
+      border: 1px solid #e2e8f0;
+    }
+    header { margin-bottom: 20px; }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 3vw, 36px);
+      letter-spacing: 0.02em;
+    }
+    .count {
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .note {
+      background: linear-gradient(90deg, #fff7ed, #fefce8);
+      border: 1px solid #fde68a;
+      color: #7c2d12;
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .note::before {
+      content: "✿";
+      font-size: 16px;
+    }
+    .tag-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+      margin: 22px 0 0;
+    }
+    .tag-list li {
+      background: #fffaf0;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid #f1f5f9;
+      box-shadow: 0 8px 16px rgba(15, 23, 42, 0.06);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .tag-list li:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 20px rgba(15, 23, 42, 0.12);
+    }
+    a { text-decoration: none; color: var(--ink); display: block; }
+    a:hover { color: #b45309; }
+    code {
+      background: var(--accent-soft);
+      padding: 2px 6px;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    @media (max-width: 600px) {
+      .wrap { padding: 22px; }
+      .tag-list { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>HTMLタグ一覧</h1>
-    <div class="count">全 107 タグ（WHATWG HTML Living Standard / Indices: Elements 基準、Obsolete除外）</div>
-  </header>
-  <main>
-    <ul class="tag-list">
+  <div class="wrap">
+    <header>
+      <h1>HTMLタグ一覧</h1>
+      <div class="count">全 107 タグ（WHATWG HTML Living Standard / Indices: Elements 基準、Obsolete除外）</div>
+    </header>
+    <main>
+      <ul class="tag-list">
       <li><a href="tag/a.html"><code>&lt;a&gt;</code></a></li>
       <li><a href="tag/abbr.html"><code>&lt;abbr&gt;</code></a></li>
       <li><a href="tag/address.html"><code>&lt;address&gt;</code></a></li>
@@ -129,7 +209,8 @@
       <li><a href="tag/var.html"><code>&lt;var&gt;</code></a></li>
       <li><a href="tag/video.html"><code>&lt;video&gt;</code></a></li>
       <li><a href="tag/wbr.html"><code>&lt;wbr&gt;</code></a></li>
-    </ul>
-  </main>
+      </ul>
+    </main>
+  </div>
 </body>
 </html>
