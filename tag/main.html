@@ -82,26 +82,7 @@
     <p>HTMLの <code>&lt;main&gt;</code> 要素は、Container for the dominant contents of the document を表します。 ページの大きな構造や意味の区切りを示すために使います。 内容のまとまりごとに見出しや本文を入れると読みやすくなります。 見た目はCSSで整えるのが基本で、タグ自体は意味付けを担当します。 関連タグ: <a href="../tag/section.html"><code>&lt;section&gt;</code></a>、<a href="../tag/article.html"><code>&lt;article&gt;</code></a> など。</p>
             <section>
       <h2>属性</h2>
-      <h3><a href=\"../index.html#global-attributes\">共通属性</a></h3>
-      <dl class=\"attr-list\">
-        <dt><code>id</code></dt><dd>意味: ページ内で唯一の識別子を付けます。 指定方法: id="main"<br>選択肢:<ul class="attr-options"><li><code>任意の文字列</code>: 同じページ内で重複しない値にします。</li></ul></dd>
-        <dt><code>class</code></dt><dd>意味: CSSやJSで使うクラス名を付けます。 指定方法: class="card"<br>選択肢:<ul class="attr-options"><li><code>複数指定</code>: スペース区切りで複数付けられます。</li></ul></dd>
-        <dt><code>title</code></dt><dd>意味: 補足説明（ツールチップ）を付けます。 指定方法: title="説明"<br>選択肢:<ul class="attr-options"><li><code>任意の文字列</code>: 短い説明文を入れます。</li></ul></dd>
-        <dt><code>lang</code></dt><dd>意味: 要素の言語を指定します。 指定方法: lang="ja"<br>選択肢:<ul class="attr-options"><li><code>BCP 47</code>: 例: ja, en, en-US など。</li></ul></dd>
-        <dt><code>dir</code></dt><dd>意味: 文字の方向を指定します。 指定方法: dir="ltr"<br>選択肢:<ul class="attr-options"><li><code>ltr</code>: 左から右（既定）</li><li><code>rtl</code>: 右から左</li><li><code>auto</code>: 内容から自動判定</li></ul></dd>
-        <dt><code>hidden</code></dt><dd>意味: 要素を非表示にします。 指定方法: hidden<br>選択肢:<ul class="attr-options"><li><code>付与</code>: 表示・操作の対象外になります。</li></ul></dd>
-        <dt><code>tabindex</code></dt><dd>意味: Tab移動の順序やフォーカス可否を指定します。 指定方法: tabindex="0"<br>選択肢:<ul class="attr-options"><li><code>整数</code>: 0は通常、-1はTab移動から除外。</li></ul></dd>
-        <dt><code>style</code></dt><dd>意味: 要素に直接CSSを書くときに使います。 指定方法: style="color: red;"<br>選択肢:<ul class="attr-options"><li><code>CSS宣言</code>: プロパティ: 値; の形式。</li></ul></dd>
-        <dt><code>contenteditable</code></dt><dd>意味: 要素内を編集可能にします。 指定方法: contenteditable="true"<br>選択肢:<ul class="attr-options"><li><code>true</code>: 編集可能にする</li><li><code>false</code>: 編集不可にする</li></ul></dd>
-        <dt><code>spellcheck</code></dt><dd>意味: スペルチェックの有無を指定します。 指定方法: spellcheck="true"<br>選択肢:<ul class="attr-options"><li><code>true</code>: 有効にする</li><li><code>false</code>: 無効にする</li></ul></dd>
-        <dt><code>translate</code></dt><dd>意味: 翻訳の対象にするか指定します。 指定方法: translate="no"<br>選択肢:<ul class="attr-options"><li><code>yes</code>: 翻訳対象にする</li><li><code>no</code>: 翻訳対象外にする</li></ul></dd>
-        <dt><code>draggable</code></dt><dd>意味: ドラッグ可能か指定します。 指定方法: draggable="true"<br>選択肢:<ul class="attr-options"><li><code>true</code>: ドラッグ可能</li><li><code>false</code>: ドラッグ不可</li></ul></dd>
-        <dt><code>inert</code></dt><dd>意味: 操作やフォーカスを受け付けない状態にします。 指定方法: inert<br>選択肢:<ul class="attr-options"><li><code>付与</code>: 操作やフォーカスを無効化。</li></ul></dd>
-        <dt><code>data-*</code></dt><dd>意味: 独自データ属性を定義します。 指定方法: data-user-id="123"<br>選択肢:<ul class="attr-options"><li><code>任意の文字列</code>: 用途に合わせた値。</li></ul></dd>
-        <dt><code>aria-*</code></dt><dd>意味: アクセシビリティ用の属性です。 指定方法: aria-label="説明"<br>選択肢:<ul class="attr-options"><li><code>属性ごと</code>: 各ARIA属性の規定に従います。</li></ul></dd>
-        <dt><code>role</code></dt><dd>意味: ARIAの役割を指定します。 指定方法: role="button"<br>選択肢:<ul class="attr-options"><li><code>ARIAロール</code>: 例: button, dialog など。</li></ul></dd>
-      </dl>
-      <details class=\"attr-details\">
+      <details class="attr-details">
         <summary>固有属性（クリックで開く）</summary>
         <p>この要素固有の属性はありません。</p>
       </details>
@@ -125,6 +106,8 @@
   </main>  </div>
 </body>
 </html>
+
+
 
 
 
