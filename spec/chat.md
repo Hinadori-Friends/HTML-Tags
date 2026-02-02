@@ -145,3 +145,15 @@
 
 **Assistant:** 了解です。common-attributes.html を style.css 参照に切り替え、ページ固有のスタイルだけ残しました。
 
+**User:** readme.mdを修正してください
+
+**Assistant:** README.md の文字化けを解消し、現状の構成（common-attributes.html / style.css / spec/chat.md など）を反映して書き直しました。
+
+**User:** https://hinadori-friends.github.io/HTML-Tags/ このURLで閲覧できることを記載してください
+
+**Assistant:** README.md に公開先URLを追記しました。
+
+**User:** これからは，plan.md, gpt.md, readme.mdを自動更新してください
+
+**Assistant:** 了解です。以後の仕様変更があれば spec/plan.md / spec/gpt.md / README.md を自動更新する方針を記載しました。
+

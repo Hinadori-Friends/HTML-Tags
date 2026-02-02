@@ -13,6 +13,7 @@
  - タグ一覧の基準はWHATWG HTML Living StandardのIndices（Elements）
  - Obsolete features に掲載される廃止・非推奨要素は対象外
  - ここでのチャット内容は `spec/chat.md` に記録し、以後の会話も追記する
+ - 以後の作業で仕様変更があれば `spec/plan.md` / `spec/gpt.md` / `README.md` を自動更新する
  - 各タグページに属性一覧（意味・指定方法・選択肢）をコード例の前に記載する
 - 固有属性は折りたたみ表示にする
 - 共通属性一覧は `common-attributes.html` に配置し、`index.html` から参照できるようにする
