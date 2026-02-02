@@ -125,3 +125,19 @@
 
 **Assistant:** 了解です。script/style/link など外部ファイル参照に関する記述を各ページに追記しました。
 
+**User:** 共通で使用されているstyleのみindex.htmlと同じ階層にstyle.cssとして抽出しそれを読み込むように修正
+
+**Assistant:** 了解です。共通スタイルをstyle.cssに抽出し、index.htmlと各タグページから読み込むように修正しました。
+
+**User:** その前に，エラーチェックをお願いします
+
+**Assistant:** 全件チェックの結果、index.html と tag/*.html の <head> に literal の \\n が残っており、ブラウザ上で \n が文字として表示される可能性があるのを確認。その他の致命的な崩れは見当たりませんでした。修正が必要なら \n を実改行へ置換します。
+
+**User:** 全て
+
+**Assistant:** 同上（全体チェックとしても \n の混入が主な問題点でした）。
+
+**User:** 修正してください
+
+**Assistant:** 了解です。index.html / tag/*.html / common-attributes.html のリテラルな \\n を実改行に置換しました。
+
