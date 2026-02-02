@@ -217,3 +217,11 @@
 
 **Assistant:** index.html の共通属性リンク下にデモ導線を追加しました。
 
+**User:** メニューが少ないのでかなり充実させてください
+
+**Assistant:** demo/cafe/menu.html のメニュー項目を大幅に追加しました。
+
+**User:** メニューの量をあと5倍以上に増やしてください．期間限定のメニューも追加してください
+
+**Assistant:** demo/cafe/menu.html を大幅増量し、Seasonal（期間限定）カテゴリーとフィルターを追加しました。
+
