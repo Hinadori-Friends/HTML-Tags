@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOCTE CAFE | お問い合わせ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">NOCTE <span>CAFE</span></a>
+      <div class="nav-links">
+        <a href="index.html">ホーム</a>
+        <a href="menu.html">メニュー</a>
+        <a href="access.html">アクセス</a>
+        <a href="contact.html" class="active">お問い合わせ</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section reveal">
+      <div class="ribbon">Contact</div>
+      <h2>お問い合わせ</h2>
+      <p>ご予約やイベント利用の相談など、お気軽にどうぞ。</p>
+      <form class="contact-form" data-contact-form>
+        <div>
+          <label for="name">お名前</label>
+          <input id="name" name="name" type="text" placeholder="山田 花子" required>
+        </div>
+        <div>
+          <label for="email">メールアドレス</label>
+          <input id="email" name="email" type="email" placeholder="hello@example.com" required>
+        </div>
+        <div>
+          <label for="topic">お問い合わせ種別</label>
+          <select id="topic" name="topic">
+            <option>ご予約</option>
+            <option>メニューについて</option>
+            <option>貸切の相談</option>
+            <option>その他</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">内容</label>
+          <textarea id="message" name="message" rows="5" placeholder="ご希望の日時など"></textarea>
+        </div>
+        <button type="submit">送信</button>
+        <div data-submit-output style="display:none; color: #2b1c18; font-weight: 700;"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>NOCTE CAFE / 返信は24時間以内を目安に。</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

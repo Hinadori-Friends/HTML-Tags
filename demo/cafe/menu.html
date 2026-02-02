@@ -1,0 +1,88 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOCTE CAFE | メニュー</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">NOCTE <span>CAFE</span></a>
+      <div class="nav-links">
+        <a href="index.html">ホーム</a>
+        <a href="menu.html" class="active">メニュー</a>
+        <a href="access.html">アクセス</a>
+        <a href="contact.html">お問い合わせ</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section reveal">
+      <div class="ribbon">Seasonal Selection</div>
+      <h2>Menu</h2>
+      <p>香り・余韻・温度まで設計されたラインアップ。気分に合わせてフィルターできます。</p>
+      <div class="menu-filter">
+        <button class="active" data-filter="all">すべて</button>
+        <button data-filter="coffee">Coffee</button>
+        <button data-filter="latte">Latte</button>
+        <button data-filter="tea">Tea</button>
+        <button data-filter="food">Food</button>
+      </div>
+
+      <div class="menu-list">
+        <div class="menu-item" data-category="coffee">
+          <div class="tag">Coffee</div>
+          <h3>Urban Drip</h3>
+          <p>フルーティーな酸味とビターのバランス。</p>
+          <div class="price">¥580</div>
+        </div>
+        <div class="menu-item" data-category="latte">
+          <div class="tag">Latte</div>
+          <h3>Midnight Latte</h3>
+          <p>オーツとカカオの深い余韻。</p>
+          <div class="price">¥680</div>
+        </div>
+        <div class="menu-item" data-category="coffee">
+          <div class="tag">Coffee</div>
+          <h3>Siphon Ritual</h3>
+          <p>温度と抽出を整えるクラシック。</p>
+          <div class="price">¥720</div>
+        </div>
+        <div class="menu-item" data-category="tea">
+          <div class="tag">Tea</div>
+          <h3>Amber Rooibos</h3>
+          <p>夜更けに合わせたノンカフェイン。</p>
+          <div class="price">¥560</div>
+        </div>
+        <div class="menu-item" data-category="latte">
+          <div class="tag">Latte</div>
+          <h3>Cloud Caramel</h3>
+          <p>ほのかな塩味とキャラメル。</p>
+          <div class="price">¥700</div>
+        </div>
+        <div class="menu-item" data-category="food">
+          <div class="tag">Food</div>
+          <h3>Night Croissant</h3>
+          <p>焦がしバターと黒胡椒。</p>
+          <div class="price">¥520</div>
+        </div>
+        <div class="menu-item" data-category="food">
+          <div class="tag">Food</div>
+          <h3>Espresso Tiramisu</h3>
+          <p>濃厚なエスプレッソの香り。</p>
+          <div class="price">¥740</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>NOCTE CAFE / メニューは季節で変わります。</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
