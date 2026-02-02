@@ -225,3 +225,7 @@
 
 **Assistant:** demo/cafe/menu.html を大幅増量し、Seasonal（期間限定）カテゴリーとフィルターを追加しました。
 
+**User:** メニューページが表示されません
+
+**Assistant:** IntersectionObserver 非対応時に表示が隠れたままになる可能性があるため、fallback で強制表示する処理を script.js に追加しました。
+

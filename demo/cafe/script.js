@@ -2,18 +2,21 @@
 const sections = document.querySelectorAll('section[id]');
 const revealItems = document.querySelectorAll('.reveal');
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-      }
-    });
-  },
-  { threshold: 0.15 }
-);
-
-revealItems.forEach((el) => observer.observe(el));
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+  revealItems.forEach((el) => observer.observe(el));
+} else {
+  revealItems.forEach((el) => el.classList.add('is-visible'));
+}
 
 const updateActiveLink = () => {
   let current = '';
