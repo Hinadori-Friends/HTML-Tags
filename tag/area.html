@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -31,15 +31,15 @@
       <details class="attr-details">
         <summary>固有属性（クリックで開く）</summary>
         <dl class="attr-list">
-        <dt><code>alt</code></dt><dd>意味: 画像や領域の代替テキストを指定します。<br>指定方法: alt="値"</dd>
-        <dt><code>coords</code></dt><dd>意味: 数値を指定します。<br>指定方法: coords="値"</dd>
-        <dt><code>shape</code></dt><dd>意味: 用途に応じた値を指定します。<br>指定方法: shape="値"</dd>
-        <dt><code>href</code></dt><dd>意味: リンク先URLを指定します。<br>指定方法: href="値"</dd>
-        <dt><code>target</code></dt><dd>意味: リンク先の開き方を指定します。<br>指定方法: target="値"<br>選択肢:<ul class="attr-options"><li><code>_self</code>: 同じタブ（既定）で開く</li><li><code>_blank</code>: 新しいタブ/ウィンドウで開く</li><li><code>_parent</code>: 親フレームで開く</li><li><code>_top</code>: 最上位の文書で開く</li></ul></dd>
-        <dt><code>download</code></dt><dd>意味: リンク先をダウンロードとして扱います。<br>指定方法: download="値"</dd>
-        <dt><code>ping</code></dt><dd>意味: URLを指定します。<br>指定方法: ping="値"<br>選択肢:<ul class="attr-options"><li><code>スペース区切り</code>: 複数キーワードを指定</li></ul></dd>
-        <dt><code>rel</code></dt><dd>意味: リンク先との関係を指定します。<br>指定方法: rel="値"<br>選択肢:<ul class="attr-options"><li><code>スペース区切り</code>: 複数キーワードを指定</li></ul></dd>
-        <dt><code>referrerpolicy</code></dt><dd>意味: リファラ送信方針を指定します。<br>指定方法: referrerpolicy="値"<br>選択肢:<ul class="attr-options"><li><code>no-referrer</code>: リファラを送らない</li><li><code>no-referrer-when-downgrade</code>: HTTPS→HTTPでは送らない</li><li><code>origin</code>: オリジンのみ送る</li><li><code>origin-when-cross-origin</code>: 同一オリジンは完全、他はオリジンのみ</li><li><code>same-origin</code>: 同一オリジンのみ送る</li><li><code>strict-origin</code>: オリジンのみ、ダウングレード時は送らない</li><li><code>strict-origin-when-cross-origin</code>: 同一は完全、他はオリジンのみ、ダウングレード時は送らない</li><li><code>unsafe-url</code>: 完全なURLを常に送る</li></ul></dd>
+        <dt><code>alt</code></dt><dd><p><strong>何を表すか:</strong> 画像などが表示できないときに代わりに示す説明文です。読み上げにも使われます。</p><p><strong>ポイント:</strong> 画像が表示できないときの代わりの説明です。内容が伝わる短い文章にします。</p><p><strong>書き方:</strong> <code>alt="値"</code></p><p><strong>例:</strong> <code>&lt;area alt="例"&gt;</code></p></dd>
+        <dt><code>coords</code></dt><dd><p><strong>何を表すか:</strong> 数値を指定します。例: 3 と書けば3つ分・3行分など、数量や範囲を数で指定します。</p><p><strong>書き方:</strong> <code>coords="値"</code></p><p><strong>例:</strong> <code>&lt;area coords="例"&gt;</code></p></dd>
+        <dt><code>shape</code></dt><dd><p><strong>何を表すか:</strong> クリック領域の形を指定します。例: rect（矩形）/circle（円）/poly（多角形）。</p><p><strong>書き方:</strong> <code>shape="値"</code></p><p><strong>例:</strong> <code>&lt;area shape="例"&gt;</code></p></dd>
+        <dt><code>href</code></dt><dd><p><strong>何を表すか:</strong> リンク先を指定する属性です。クリックするとこのURLへ移動します。相対パスも使えます。</p><p><strong>ポイント:</strong> リンク先を決める一番大切な属性です。まずは有効なURLか相対パスを書くことを意識します。</p><p><strong>書き方:</strong> <code>href="値"</code></p><p><strong>例:</strong> <code>&lt;area href="例"&gt;</code></p></dd>
+        <dt><code>target</code></dt><dd><p><strong>何を表すか:</strong> リンクをどこで開くかを指定します。新しいタブにするか同じタブにするかを決めます。</p><p><strong>ポイント:</strong> リンクの開き方を決めます。新しいタブにしたい場合によく使います。</p><p><strong>書き方:</strong> <code>target="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>_self</code>: 同じタブ（既定）で開く</li><li><code>_blank</code>: 新しいタブ/ウィンドウで開く</li><li><code>_parent</code>: 親フレームで開く</li><li><code>_top</code>: 最上位の文書で開く</li></ul><p><strong>例:</strong> <code>&lt;area target="例"&gt;</code></p></dd>
+        <dt><code>download</code></dt><dd><p><strong>何を表すか:</strong> リンク先を「ダウンロード」として扱う指示です。クリック時に保存ダイアログが出ます。</p><p><strong>ポイント:</strong> 指定するとリンク先をダウンロードとして扱います。</p><p><strong>書き方:</strong> <code>download="値"</code></p><p><strong>例:</strong> <code>&lt;area download="例"&gt;</code></p></dd>
+        <dt><code>ping</code></dt><dd><p><strong>何を表すか:</strong> URLを指定します。例: 読み込むファイルや移動先のURLを入れます。</p><p><strong>書き方:</strong> <code>ping="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>スペース区切り</code>: 複数キーワードを指定</li></ul><p><strong>例:</strong> <code>&lt;area ping="例"&gt;</code></p></dd>
+        <dt><code>rel</code></dt><dd><p><strong>何を表すか:</strong> リンク先との関係を指定します。スタイルシート・外部参照・nofollow など用途を伝えます。</p><p><strong>ポイント:</strong> リンクの関係を示します。外部リンクやスタイル指定などで使います。</p><p><strong>書き方:</strong> <code>rel="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>スペース区切り</code>: 複数キーワードを指定</li></ul><p><strong>例:</strong> <code>&lt;area rel="例"&gt;</code></p></dd>
+        <dt><code>referrerpolicy</code></dt><dd><p><strong>何を表すか:</strong> 外部スクリプト取得時に送るリファラ（参照元情報）の方針を指定します。</p><p><strong>書き方:</strong> <code>referrerpolicy="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>no-referrer</code>: リファラを送らない</li><li><code>no-referrer-when-downgrade</code>: HTTPS→HTTPでは送らない</li><li><code>origin</code>: オリジンのみ送る</li><li><code>origin-when-cross-origin</code>: 同一オリジンは完全、他はオリジンのみ</li><li><code>same-origin</code>: 同一オリジンのみ送る</li><li><code>strict-origin</code>: オリジンのみ、ダウングレード時は送らない</li><li><code>strict-origin-when-cross-origin</code>: 同一は完全、他はオリジンのみ、ダウングレード時は送らない</li><li><code>unsafe-url</code>: 完全なURLを常に送る</li></ul><p><strong>例:</strong> <code>&lt;area referrerpolicy="例"&gt;</code></p></dd>
       </dl>
       </details>
     </section>
@@ -64,6 +64,10 @@
   </main>  </div>
 </body>
 </html>
+
+
+
+
 
 
 

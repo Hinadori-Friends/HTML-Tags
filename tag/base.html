@@ -31,8 +31,8 @@
       <details class="attr-details">
         <summary>固有属性（クリックで開く）</summary>
         <dl class="attr-list">
-        <dt><code>href</code></dt><dd>意味: リンク先URLを指定します。<br>指定方法: href="値"</dd>
-        <dt><code>target</code></dt><dd>意味: リンク先の開き方を指定します。<br>指定方法: target="値"<br>選択肢:<ul class="attr-options"><li><code>_self</code>: 同じタブ（既定）で開く</li><li><code>_blank</code>: 新しいタブ/ウィンドウで開く</li><li><code>_parent</code>: 親フレームで開く</li><li><code>_top</code>: 最上位の文書で開く</li></ul></dd>
+        <dt><code>href</code></dt><dd><p><strong>何を表すか:</strong> リンク先を指定する属性です。クリックするとこのURLへ移動します。相対パスも使えます。</p><p><strong>ポイント:</strong> リンク先を決める一番大切な属性です。まずは有効なURLか相対パスを書くことを意識します。</p><p><strong>書き方:</strong> <code>href="値"</code></p><p><strong>例:</strong> <code>&lt;base href="例"&gt;</code></p></dd>
+        <dt><code>target</code></dt><dd><p><strong>何を表すか:</strong> リンクをどこで開くかを指定します。新しいタブにするか同じタブにするかを決めます。</p><p><strong>ポイント:</strong> リンクの開き方を決めます。新しいタブにしたい場合によく使います。</p><p><strong>書き方:</strong> <code>target="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>_self</code>: 同じタブ（既定）で開く</li><li><code>_blank</code>: 新しいタブ/ウィンドウで開く</li><li><code>_parent</code>: 親フレームで開く</li><li><code>_top</code>: 最上位の文書で開く</li></ul><p><strong>例:</strong> <code>&lt;base target="例"&gt;</code></p></dd>
       </dl>
       </details>
     </section>
@@ -53,6 +53,10 @@
   </main>  </div>
 </body>
 </html>
+
+
+
+
 
 
 

@@ -31,9 +31,9 @@
       <details class="attr-details">
         <summary>固有属性（クリックで開く）</summary>
         <dl class="attr-list">
-        <dt><code>for</code></dt><dd>意味: 用途に応じた値を指定します。<br>指定方法: for="値"</dd>
-        <dt><code>form</code></dt><dd>意味: 用途に応じた値を指定します。<br>指定方法: form="値"</dd>
-        <dt><code>name</code></dt><dd>意味: 要素の名前（送信時のキーなど）を指定します。<br>指定方法: name="値"</dd>
+        <dt><code>for</code></dt><dd><p><strong>何を表すか:</strong> 関連付けるフォーム部品のidを指定します。クリックで入力欄にフォーカスさせたいときに使います。</p><p><strong>書き方:</strong> <code>for="値"</code></p><p><strong>例:</strong> <code>&lt;output for="例"&gt;...&lt;/output&gt;</code></p></dd>
+        <dt><code>form</code></dt><dd><p><strong>何を表すか:</strong> この要素がどのformに属するかを指定します。フォームの外に置いた部品を、特定のフォームに結び付けたいときに使います。</p><p><strong>書き方:</strong> <code>form="値"</code></p><p><strong>例:</strong> <code>&lt;output form="例"&gt;...&lt;/output&gt;</code></p></dd>
+        <dt><code>name</code></dt><dd><p><strong>何を表すか:</strong> フォーム送信時の「項目名」になる属性です。サーバー側ではこの名前で値を受け取ります。</p><p><strong>ポイント:</strong> 送信時のキーになる名前です。フォームでは必須になることが多いです。</p><p><strong>書き方:</strong> <code>name="値"</code></p><p><strong>例:</strong> <code>&lt;output name="例"&gt;...&lt;/output&gt;</code></p></dd>
       </dl>
       </details>
     </section>
@@ -58,6 +58,10 @@
   </main>  </div>
 </body>
 </html>
+
+
+
+
 
 
 

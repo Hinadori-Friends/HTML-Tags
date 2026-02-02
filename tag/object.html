@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -31,12 +31,12 @@
       <details class="attr-details">
         <summary>固有属性（クリックで開く）</summary>
         <dl class="attr-list">
-        <dt><code>data</code></dt><dd>意味: URLを指定します。<br>指定方法: data="値"</dd>
-        <dt><code>type</code></dt><dd>意味: 要素の種類を指定します。<br>指定方法: type="値"</dd>
-        <dt><code>name</code></dt><dd>意味: 要素の名前（送信時のキーなど）を指定します。<br>指定方法: name="値"</dd>
-        <dt><code>form</code></dt><dd>意味: 用途に応じた値を指定します。<br>指定方法: form="値"</dd>
-        <dt><code>width</code></dt><dd>意味: 表示幅を指定します。<br>指定方法: width="値"</dd>
-        <dt><code>height</code></dt><dd>意味: 表示高さを指定します。<br>指定方法: height="値"</dd>
+        <dt><code>data</code></dt><dd><p><strong>何を表すか:</strong> URLを指定します。例: 読み込むファイルや移動先のURLを入れます。</p><p><strong>書き方:</strong> <code>data="値"</code></p><p><strong>例:</strong> <code>&lt;object data="例"&gt;...&lt;/object&gt;</code></p></dd>
+        <dt><code>type</code></dt><dd><p><strong>何を表すか:</strong> 要素の種類やデータの形式を指定します。指定するとブラウザが正しく解釈しやすくなります。</p><p><strong>ポイント:</strong> 要素の種類や形式を決めます。用途が複数ある要素では特に重要です。</p><p><strong>書き方:</strong> <code>type="値"</code></p><p><strong>例:</strong> <code>&lt;object type="例"&gt;...&lt;/object&gt;</code></p></dd>
+        <dt><code>name</code></dt><dd><p><strong>何を表すか:</strong> フォーム送信時の「項目名」になる属性です。サーバー側ではこの名前で値を受け取ります。</p><p><strong>ポイント:</strong> 送信時のキーになる名前です。フォームでは必須になることが多いです。</p><p><strong>書き方:</strong> <code>name="値"</code></p><p><strong>例:</strong> <code>&lt;object name="例"&gt;...&lt;/object&gt;</code></p></dd>
+        <dt><code>form</code></dt><dd><p><strong>何を表すか:</strong> この要素がどのformに属するかを指定します。フォームの外に置いた部品を、特定のフォームに結び付けたいときに使います。</p><p><strong>書き方:</strong> <code>form="値"</code></p><p><strong>例:</strong> <code>&lt;object form="例"&gt;...&lt;/object&gt;</code></p></dd>
+        <dt><code>width</code></dt><dd><p><strong>何を表すか:</strong> 表示幅を指定します。例: 300 のように数値で枠の幅を決めます。</p><p><strong>書き方:</strong> <code>width="値"</code></p><p><strong>例:</strong> <code>&lt;object width="例"&gt;...&lt;/object&gt;</code></p></dd>
+        <dt><code>height</code></dt><dd><p><strong>何を表すか:</strong> 表示高さを指定します。例: 200 のように数値で枠の高さを決めます。</p><p><strong>書き方:</strong> <code>height="値"</code></p><p><strong>例:</strong> <code>&lt;object height="例"&gt;...&lt;/object&gt;</code></p></dd>
       </dl>
       </details>
     </section>
@@ -53,6 +53,10 @@
   </main>  </div>
 </body>
 </html>
+
+
+
+
 
 
 

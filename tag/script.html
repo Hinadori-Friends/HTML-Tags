@@ -32,16 +32,16 @@
       <details class="attr-details">
         <summary>固有属性（クリックで開く）</summary>
         <dl class="attr-list">
-        <dt><code>src</code></dt><dd>意味: リソースのURLを指定します。<br>指定方法: src="値"</dd>
-        <dt><code>type</code></dt><dd>意味: 要素の種類を指定します。<br>指定方法: type="値"</dd>
-        <dt><code>nomodule</code></dt><dd>意味: 指定の有無で有効/無効を切り替えます。<br>指定方法: 属性名だけ書く（例: nomodule）<br>選択肢:<ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul></dd>
-        <dt><code>async</code></dt><dd>意味: 指定の有無で有効/無効を切り替えます。<br>指定方法: 属性名だけ書く（例: async）<br>選択肢:<ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul></dd>
-        <dt><code>defer</code></dt><dd>意味: 指定の有無で有効/無効を切り替えます。<br>指定方法: 属性名だけ書く（例: defer）<br>選択肢:<ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul></dd>
-        <dt><code>crossorigin</code></dt><dd>意味: CORSの送信方式を指定します。<br>指定方法: crossorigin="値"<br>選択肢:<ul class="attr-options"><li><code>anonymous</code>: 資格情報（Cookie等）を送らない</li><li><code>use-credentials</code>: 資格情報を送る</li></ul></dd>
-        <dt><code>integrity</code></dt><dd>意味: 任意のテキストを指定します。<br>指定方法: integrity="値"</dd>
-        <dt><code>referrerpolicy</code></dt><dd>意味: リファラ送信方針を指定します。<br>指定方法: referrerpolicy="値"<br>選択肢:<ul class="attr-options"><li><code>no-referrer</code>: リファラを送らない</li><li><code>no-referrer-when-downgrade</code>: HTTPS→HTTPでは送らない</li><li><code>origin</code>: オリジンのみ送る</li><li><code>origin-when-cross-origin</code>: 同一オリジンは完全、他はオリジンのみ</li><li><code>same-origin</code>: 同一オリジンのみ送る</li><li><code>strict-origin</code>: オリジンのみ、ダウングレード時は送らない</li><li><code>strict-origin-when-cross-origin</code>: 同一は完全、他はオリジンのみ、ダウングレード時は送らない</li><li><code>unsafe-url</code>: 完全なURLを常に送る</li></ul></dd>
-        <dt><code>blocking</code></dt><dd>意味: キーワード（複数指定可）を指定します。<br>指定方法: blocking="値"<br>選択肢:<ul class="attr-options"><li><code>スペース区切り</code>: 複数キーワードを指定</li></ul></dd>
-        <dt><code>fetchpriority</code></dt><dd>意味: 用途に応じた値を指定します。<br>指定方法: fetchpriority="値"</dd>
+        <dt><code>src</code></dt><dd><p><strong>何を表すか:</strong> 読み込むJavaScriptファイルの場所を指定します。外部ファイルに書いた処理を読み込ませるための指定です。</p><p><strong>ポイント:</strong> JavaScriptファイルの相対パスやURLを指定します。例: <code>js/app.js</code> のように書くと構成が分かりやすいです。</p><p><strong>書き方:</strong> <code>src="値"</code></p><p><strong>例:</strong> <code>&lt;script src="例"&gt;&lt;/script&gt;</code></p></dd>
+        <dt><code>type</code></dt><dd><p><strong>何を表すか:</strong> スクリプトの種類（通常のJavaScriptか、ES Modulesか）を指定します。</p><p><strong>ポイント:</strong> モジュールとして読み込む場合は <code>module</code> を指定します。通常のJavaScriptは省略しても動きます。</p><p><strong>書き方:</strong> <code>type="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>text/javascript</code>: 通常のJavaScript（多くの場合は省略可）</li><li><code>module</code>: ES Modulesとして読み込む</li></ul><p><strong>例:</strong> <code>&lt;script type="例"&gt;...&lt;/script&gt;</code></p></dd>
+        <dt><code>nomodule</code></dt><dd><p><strong>何を表すか:</strong> モジュールに対応したブラウザでは読み込ませないための属性です。古いブラウザ向けのフォールバック用に使います。</p><p><strong>書き方:</strong> <code>属性名だけ書く（例: nomodule）</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul><p><strong>例:</strong> <code>&lt;script nomodule&gt;...&lt;/script&gt;</code></p></dd>
+        <dt><code>async</code></dt><dd><p><strong>何を表すか:</strong> 外部スクリプトを並列で読み込み、読み込み完了後すぐに実行します。実行順は保証されません。</p><p><strong>書き方:</strong> <code>属性名だけ書く（例: async）</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul><p><strong>例:</strong> <code>&lt;script async&gt;...&lt;/script&gt;</code></p></dd>
+        <dt><code>defer</code></dt><dd><p><strong>何を表すか:</strong> HTMLの解析が終わった後に実行されます。複数指定した場合は記述順に実行されます。</p><p><strong>書き方:</strong> <code>属性名だけ書く（例: defer）</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul><p><strong>例:</strong> <code>&lt;script defer&gt;...&lt;/script&gt;</code></p></dd>
+        <dt><code>crossorigin</code></dt><dd><p><strong>何を表すか:</strong> 外部スクリプト取得時のCORS設定を指定します。SRI（integrity）と組み合わせるときによく使います。</p><p><strong>書き方:</strong> <code>crossorigin="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>anonymous</code>: 資格情報（Cookie等）を送らない</li><li><code>use-credentials</code>: 資格情報を送る</li></ul><p><strong>例:</strong> <code>&lt;script crossorigin="例"&gt;...&lt;/script&gt;</code></p></dd>
+        <dt><code>integrity</code></dt><dd><p><strong>何を表すか:</strong> 外部ファイルのハッシュ値を指定して改ざん検知を行います。CDN利用時によく使います。</p><p><strong>書き方:</strong> <code>integrity="値"</code></p><p><strong>例:</strong> <code>&lt;script integrity="例"&gt;...&lt;/script&gt;</code></p></dd>
+        <dt><code>referrerpolicy</code></dt><dd><p><strong>何を表すか:</strong> 外部スクリプト取得時に送るリファラ（参照元情報）の方針を指定します。</p><p><strong>書き方:</strong> <code>referrerpolicy="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>no-referrer</code>: リファラを送らない</li><li><code>no-referrer-when-downgrade</code>: HTTPS→HTTPでは送らない</li><li><code>origin</code>: オリジンのみ送る</li><li><code>origin-when-cross-origin</code>: 同一オリジンは完全、他はオリジンのみ</li><li><code>same-origin</code>: 同一オリジンのみ送る</li><li><code>strict-origin</code>: オリジンのみ、ダウングレード時は送らない</li><li><code>strict-origin-when-cross-origin</code>: 同一は完全、他はオリジンのみ、ダウングレード時は送らない</li><li><code>unsafe-url</code>: 完全なURLを常に送る</li></ul><p><strong>例:</strong> <code>&lt;script referrerpolicy="例"&gt;...&lt;/script&gt;</code></p></dd>
+        <dt><code>blocking</code></dt><dd><p><strong>何を表すか:</strong> 読み込み中に何をブロックするかを指定します。指定すると描画を止めるため、基本は必要なときだけ使います。</p><p><strong>書き方:</strong> <code>blocking="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>render</code>: ページの描画を一時停止する</li></ul><p><strong>例:</strong> <code>&lt;script blocking="例"&gt;...&lt;/script&gt;</code></p></dd>
+        <dt><code>fetchpriority</code></dt><dd><p><strong>何を表すか:</strong> 取得の優先度を指定します。読み込みの順序やタイミングに影響します。</p><p><strong>書き方:</strong> <code>fetchpriority="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>auto</code>: ブラウザに任せる（既定）</li><li><code>high</code>: 優先度を上げる</li><li><code>low</code>: 優先度を下げる</li></ul><p><strong>例:</strong> <code>&lt;script fetchpriority="例"&gt;...&lt;/script&gt;</code></p></dd>
       </dl>
       </details>
     </section>
@@ -56,6 +56,10 @@
   </main>  </div>
 </body>
 </html>
+
+
+
+
 
 
 

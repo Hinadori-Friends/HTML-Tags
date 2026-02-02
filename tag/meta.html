@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -31,11 +31,12 @@
       <details class="attr-details">
         <summary>固有属性（クリックで開く）</summary>
         <dl class="attr-list">
-        <dt><code>name</code></dt><dd>意味: 要素の名前（送信時のキーなど）を指定します。<br>指定方法: name="値"</dd>
-        <dt><code>http-equiv</code></dt><dd>意味: HTTPヘッダー相当の指示を指定します。<br>指定方法: http-equiv="値"</dd>
-        <dt><code>content</code></dt><dd>意味: meta要素の内容を指定します。<br>指定方法: content="値"</dd>
-        <dt><code>charset</code></dt><dd>意味: 文字コードを指定します。<br>指定方法: charset="値"</dd>
-        <dt><code>media</code></dt><dd>意味: 用途に応じた値を指定します。<br>指定方法: media="値"</dd>
+        <dt><code>name</code></dt><dd><p><strong>何を表すか:</strong> フォーム送信時の「項目名」になる属性です。サーバー側ではこの名前で値を受け取ります。</p><p><strong>ポイント:</strong> 送信時のキーになる名前です。フォームでは必須になることが多いです。</p><p><strong>書き方:</strong> <code>name="値"</code></p><p><strong>例:</strong> <code>&lt;meta name="例"&gt;</code></p></dd>
+        <dt><code>http-equiv</code></dt><dd><p><strong>何を表すか:</strong> HTTPヘッダー相当の指示を指定します。例: efresh など、ブラウザに伝える指示名を入れます。</p><p><strong>書き方:</strong> <code>http-equiv="値"</code></p><p><strong>例:</strong> <code>&lt;meta http-equiv="例"&gt;</code></p></dd>
+        <dt><code>content</code></dt><dd><p><strong>何を表すか:</strong> meta要素の内容を指定します。例: 
+ame/http-equiv で指定した項目の具体的な値を書きます。</p><p><strong>書き方:</strong> <code>content="値"</code></p><p><strong>例:</strong> <code>&lt;meta content="例"&gt;</code></p></dd>
+        <dt><code>charset</code></dt><dd><p><strong>何を表すか:</strong> 文字コードを指定します。例: ほとんどのページでは utf-8 を指定します。</p><p><strong>書き方:</strong> <code>charset="値"</code></p><p><strong>例:</strong> <code>&lt;meta charset="例"&gt;</code></p></dd>
+        <dt><code>media</code></dt><dd><p><strong>何を表すか:</strong> 適用するメディア条件を指定します。例: (min-width: 600px) のように条件を書き、条件に合うときだけ有効にします。</p><p><strong>書き方:</strong> <code>media="値"</code></p><p><strong>例:</strong> <code>&lt;meta media="例"&gt;</code></p></dd>
       </dl>
       </details>
     </section>
@@ -57,6 +58,10 @@
   </main>  </div>
 </body>
 </html>
+
+
+
+
 
 
 

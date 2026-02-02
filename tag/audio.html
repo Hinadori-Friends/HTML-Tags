@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -31,13 +31,13 @@
       <details class="attr-details">
         <summary>固有属性（クリックで開く）</summary>
         <dl class="attr-list">
-        <dt><code>src</code></dt><dd>意味: リソースのURLを指定します。<br>指定方法: src="値"</dd>
-        <dt><code>crossorigin</code></dt><dd>意味: CORSの送信方式を指定します。<br>指定方法: crossorigin="値"<br>選択肢:<ul class="attr-options"><li><code>anonymous</code>: 資格情報（Cookie等）を送らない</li><li><code>use-credentials</code>: 資格情報を送る</li></ul></dd>
-        <dt><code>preload</code></dt><dd>意味: 読み込みの優先度を指定します。<br>指定方法: preload="値"<br>選択肢:<ul class="attr-options"><li><code>none</code>: 事前読み込みしない</li><li><code>metadata</code>: メタデータのみ読み込み</li><li><code>auto</code>: 可能なら読み込む</li></ul></dd>
-        <dt><code>autoplay</code></dt><dd>意味: 指定の有無で有効/無効を切り替えます。<br>指定方法: 属性名だけ書く（例: autoplay）<br>選択肢:<ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul></dd>
-        <dt><code>loop</code></dt><dd>意味: 指定の有無で有効/無効を切り替えます。<br>指定方法: 属性名だけ書く（例: loop）<br>選択肢:<ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul></dd>
-        <dt><code>muted</code></dt><dd>意味: 指定の有無で有効/無効を切り替えます。<br>指定方法: 属性名だけ書く（例: muted）<br>選択肢:<ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul></dd>
-        <dt><code>controls</code></dt><dd>意味: 指定の有無で有効/無効を切り替えます。<br>指定方法: 属性名だけ書く（例: controls）<br>選択肢:<ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul></dd>
+        <dt><code>src</code></dt><dd><p><strong>何を表すか:</strong> 読み込む外部ファイルの場所を指定します。画像・音声・動画・スクリプトなどの読み込み先になります。</p><p><strong>ポイント:</strong> 表示・再生したいファイルの場所を指定します。相対パスで書くと管理しやすいです。</p><p><strong>書き方:</strong> <code>src="値"</code></p><p><strong>例:</strong> <code>&lt;audio src="例"&gt;...&lt;/audio&gt;</code></p></dd>
+        <dt><code>crossorigin</code></dt><dd><p><strong>何を表すか:</strong> 外部スクリプト取得時のCORS設定を指定します。SRI（integrity）と組み合わせるときによく使います。</p><p><strong>書き方:</strong> <code>crossorigin="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>anonymous</code>: 資格情報（Cookie等）を送らない</li><li><code>use-credentials</code>: 資格情報を送る</li></ul><p><strong>例:</strong> <code>&lt;audio crossorigin="例"&gt;...&lt;/audio&gt;</code></p></dd>
+        <dt><code>preload</code></dt><dd><p><strong>何を表すか:</strong> 読み込みの優先度を指定します。例: すぐ再生したいときは自動読み込みを許可する設定を選びます。</p><p><strong>書き方:</strong> <code>preload="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>none</code>: 事前読み込みしない</li><li><code>metadata</code>: メタデータのみ読み込み</li><li><code>auto</code>: 可能なら読み込む</li></ul><p><strong>例:</strong> <code>&lt;audio preload="例"&gt;...&lt;/audio&gt;</code></p></dd>
+        <dt><code>autoplay</code></dt><dd><p><strong>何を表すか:</strong> ページ読み込み時に自動再生を試みます。</p><p><strong>書き方:</strong> <code>属性名だけ書く（例: autoplay）</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul><p><strong>例:</strong> <code>&lt;audio autoplay&gt;...&lt;/audio&gt;</code></p></dd>
+        <dt><code>loop</code></dt><dd><p><strong>何を表すか:</strong> 再生が終わったら繰り返します。</p><p><strong>書き方:</strong> <code>属性名だけ書く（例: loop）</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul><p><strong>例:</strong> <code>&lt;audio loop&gt;...&lt;/audio&gt;</code></p></dd>
+        <dt><code>muted</code></dt><dd><p><strong>何を表すか:</strong> 音声をミュートした状態で再生します。</p><p><strong>書き方:</strong> <code>属性名だけ書く（例: muted）</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul><p><strong>例:</strong> <code>&lt;audio muted&gt;...&lt;/audio&gt;</code></p></dd>
+        <dt><code>controls</code></dt><dd><p><strong>何を表すか:</strong> 再生・停止などの操作UIを表示します。</p><p><strong>書き方:</strong> <code>属性名だけ書く（例: controls）</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul><p><strong>例:</strong> <code>&lt;audio controls&gt;...&lt;/audio&gt;</code></p></dd>
       </dl>
       </details>
     </section>
@@ -54,6 +54,10 @@
   </main>  </div>
 </body>
 </html>
+
+
+
+
 
 
 

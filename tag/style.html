@@ -32,8 +32,8 @@
       <details class="attr-details">
         <summary>固有属性（クリックで開く）</summary>
         <dl class="attr-list">
-        <dt><code>media</code></dt><dd>意味: 用途に応じた値を指定します。<br>指定方法: media="値"</dd>
-        <dt><code>blocking</code></dt><dd>意味: キーワード（複数指定可）を指定します。<br>指定方法: blocking="値"<br>選択肢:<ul class="attr-options"><li><code>スペース区切り</code>: 複数キーワードを指定</li></ul></dd>
+        <dt><code>media</code></dt><dd><p><strong>何を表すか:</strong> 適用するメディア条件を指定します。例: (min-width: 600px) のように条件を書き、条件に合うときだけ有効にします。</p><p><strong>書き方:</strong> <code>media="値"</code></p><p><strong>例:</strong> <code>&lt;style media="例"&gt;...&lt;/style&gt;</code></p></dd>
+        <dt><code>blocking</code></dt><dd><p><strong>何を表すか:</strong> 読み込み時にブロックする対象を指定します。レンダリングを止める用途で使います。</p><p><strong>書き方:</strong> <code>blocking="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>スペース区切り</code>: 複数キーワードを指定</li></ul><p><strong>例:</strong> <code>&lt;style blocking="例"&gt;...&lt;/style&gt;</code></p></dd>
       </dl>
       </details>
     </section>
@@ -48,6 +48,10 @@
   </main>  </div>
 </body>
 </html>
+
+
+
+
 
 
 

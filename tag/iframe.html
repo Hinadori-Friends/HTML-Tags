@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -31,16 +31,16 @@
       <details class="attr-details">
         <summary>固有属性（クリックで開く）</summary>
         <dl class="attr-list">
-        <dt><code>src</code></dt><dd>意味: リソースのURLを指定します。<br>指定方法: src="値"</dd>
-        <dt><code>srcdoc</code></dt><dd>意味: iframeに埋め込むHTML文字列を指定します。<br>指定方法: srcdoc="値"</dd>
-        <dt><code>name</code></dt><dd>意味: 要素の名前（送信時のキーなど）を指定します。<br>指定方法: name="値"</dd>
-        <dt><code>sandbox</code></dt><dd>意味: キーワード（複数指定可）を指定します。<br>指定方法: sandbox="値"<br>選択肢:<ul class="attr-options"><li><code>スペース区切り</code>: 複数キーワードを指定</li></ul></dd>
-        <dt><code>allow</code></dt><dd>意味: 用途に応じた値を指定します。<br>指定方法: allow="値"</dd>
-        <dt><code>allowfullscreen</code></dt><dd>意味: 指定の有無で有効/無効を切り替えます。<br>指定方法: 属性名だけ書く（例: allowfullscreen）<br>選択肢:<ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul></dd>
-        <dt><code>width</code></dt><dd>意味: 表示幅を指定します。<br>指定方法: width="値"</dd>
-        <dt><code>height</code></dt><dd>意味: 表示高さを指定します。<br>指定方法: height="値"</dd>
-        <dt><code>referrerpolicy</code></dt><dd>意味: リファラ送信方針を指定します。<br>指定方法: referrerpolicy="値"<br>選択肢:<ul class="attr-options"><li><code>no-referrer</code>: リファラを送らない</li><li><code>no-referrer-when-downgrade</code>: HTTPS→HTTPでは送らない</li><li><code>origin</code>: オリジンのみ送る</li><li><code>origin-when-cross-origin</code>: 同一オリジンは完全、他はオリジンのみ</li><li><code>same-origin</code>: 同一オリジンのみ送る</li><li><code>strict-origin</code>: オリジンのみ、ダウングレード時は送らない</li><li><code>strict-origin-when-cross-origin</code>: 同一は完全、他はオリジンのみ、ダウングレード時は送らない</li><li><code>unsafe-url</code>: 完全なURLを常に送る</li></ul></dd>
-        <dt><code>loading</code></dt><dd>意味: 遅延読み込みの方針を指定します。<br>指定方法: loading="値"<br>選択肢:<ul class="attr-options"><li><code>lazy</code>: 画面に近づいたら読み込む</li><li><code>eager</code>: すぐに読み込む</li></ul></dd>
+        <dt><code>src</code></dt><dd><p><strong>何を表すか:</strong> 読み込む外部ファイルの場所を指定します。画像・音声・動画・スクリプトなどの読み込み先になります。</p><p><strong>ポイント:</strong> 表示・再生したいファイルの場所を指定します。相対パスで書くと管理しやすいです。</p><p><strong>書き方:</strong> <code>src="値"</code></p><p><strong>例:</strong> <code>&lt;iframe src="例"&gt;...&lt;/iframe&gt;</code></p></dd>
+        <dt><code>srcdoc</code></dt><dd><p><strong>何を表すか:</strong> iframeに埋め込むHTML文字列を指定します。この属性を設定することで、要素の動きや意味がより正確になります。</p><p><strong>書き方:</strong> <code>srcdoc="値"</code></p><p><strong>例:</strong> <code>&lt;iframe srcdoc="例"&gt;...&lt;/iframe&gt;</code></p></dd>
+        <dt><code>name</code></dt><dd><p><strong>何を表すか:</strong> フォーム送信時の「項目名」になる属性です。サーバー側ではこの名前で値を受け取ります。</p><p><strong>ポイント:</strong> 送信時のキーになる名前です。フォームでは必須になることが多いです。</p><p><strong>書き方:</strong> <code>name="値"</code></p><p><strong>例:</strong> <code>&lt;iframe name="例"&gt;...&lt;/iframe&gt;</code></p></dd>
+        <dt><code>sandbox</code></dt><dd><p><strong>何を表すか:</strong> キーワード（複数指定可）を指定します。例: id1 id2 のようにスペース区切りで書きます。</p><p><strong>書き方:</strong> <code>sandbox="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>スペース区切り</code>: 複数キーワードを指定</li></ul><p><strong>例:</strong> <code>&lt;iframe sandbox="例"&gt;...&lt;/iframe&gt;</code></p></dd>
+        <dt><code>allow</code></dt><dd><p><strong>何を表すか:</strong> iframe内で許可する機能を指定します。例: fullscreen/autoplay など。</p><p><strong>書き方:</strong> <code>allow="値"</code></p><p><strong>例:</strong> <code>&lt;iframe allow="例"&gt;...&lt;/iframe&gt;</code></p></dd>
+        <dt><code>allowfullscreen</code></dt><dd><p><strong>何を表すか:</strong> 指定の有無で有効/無効を切り替えます。指定するとON、外すとOFFになります。</p><p><strong>書き方:</strong> <code>属性名だけ書く（例: allowfullscreen）</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>付与</code>: 有効</li><li><code>省略</code>: 無効</li></ul><p><strong>例:</strong> <code>&lt;iframe allowfullscreen&gt;...&lt;/iframe&gt;</code></p></dd>
+        <dt><code>width</code></dt><dd><p><strong>何を表すか:</strong> 表示幅を指定します。例: 300 のように数値で枠の幅を決めます。</p><p><strong>書き方:</strong> <code>width="値"</code></p><p><strong>例:</strong> <code>&lt;iframe width="例"&gt;...&lt;/iframe&gt;</code></p></dd>
+        <dt><code>height</code></dt><dd><p><strong>何を表すか:</strong> 表示高さを指定します。例: 200 のように数値で枠の高さを決めます。</p><p><strong>書き方:</strong> <code>height="値"</code></p><p><strong>例:</strong> <code>&lt;iframe height="例"&gt;...&lt;/iframe&gt;</code></p></dd>
+        <dt><code>referrerpolicy</code></dt><dd><p><strong>何を表すか:</strong> 外部スクリプト取得時に送るリファラ（参照元情報）の方針を指定します。</p><p><strong>書き方:</strong> <code>referrerpolicy="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>no-referrer</code>: リファラを送らない</li><li><code>no-referrer-when-downgrade</code>: HTTPS→HTTPでは送らない</li><li><code>origin</code>: オリジンのみ送る</li><li><code>origin-when-cross-origin</code>: 同一オリジンは完全、他はオリジンのみ</li><li><code>same-origin</code>: 同一オリジンのみ送る</li><li><code>strict-origin</code>: オリジンのみ、ダウングレード時は送らない</li><li><code>strict-origin-when-cross-origin</code>: 同一は完全、他はオリジンのみ、ダウングレード時は送らない</li><li><code>unsafe-url</code>: 完全なURLを常に送る</li></ul><p><strong>例:</strong> <code>&lt;iframe referrerpolicy="例"&gt;...&lt;/iframe&gt;</code></p></dd>
+        <dt><code>loading</code></dt><dd><p><strong>何を表すか:</strong> 遅延読み込みの方針を指定します。lazy は画面に近づいたら読み込み、eager はすぐ読み込みます。</p><p><strong>書き方:</strong> <code>loading="値"</code></p><p><strong>選択肢:</strong></p><ul class="attr-options"><li><code>lazy</code>: 画面に近づいたら読み込む</li><li><code>eager</code>: すぐに読み込む</li></ul><p><strong>例:</strong> <code>&lt;iframe loading="例"&gt;...&lt;/iframe&gt;</code></p></dd>
       </dl>
       </details>
     </section>
@@ -57,6 +57,10 @@
   </main>  </div>
 </body>
 </html>
+
+
+
+
 
 
 
