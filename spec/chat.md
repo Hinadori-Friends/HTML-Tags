@@ -141,3 +141,7 @@
 
 **Assistant:** 了解です。index.html / tag/*.html / common-attributes.html のリテラルな \\n を実改行に置換しました。
 
+**User:** common-attributesもstyleを修正してください
+
+**Assistant:** 了解です。common-attributes.html を style.css 参照に切り替え、ページ固有のスタイルだけ残しました。
+
