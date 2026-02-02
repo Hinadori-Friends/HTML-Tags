@@ -229,3 +229,7 @@
 
 **Assistant:** IntersectionObserver 非対応時に表示が隠れたままになる可能性があるため、fallback で強制表示する処理を script.js に追加しました。
 
+**User:** 表示されません
+
+**Assistant:** reveal の初期非表示を廃止し、常に表示されるよう demo/cafe/style.css を修正しました。
+
